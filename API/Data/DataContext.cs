@@ -20,10 +20,10 @@ namespace API.Data
 
         public DbSet<AppUser> Users { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            // optionsBuilder.UseSqlite(@"Server=(localdb)\mssqllocaldb;Database=Contoso-dev");
-            optionsBuilder.UseSqlite("Data source=restaurantapp.db");
-        }
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // {
+        //     // optionsBuilder.UseSqlite(@"Server=(localdb)\mssqllocaldb;Database=Contoso-dev");
+        //     optionsBuilder.UseSqlite("Data source=restaurantapp.db");
+        // }
     }
 }
